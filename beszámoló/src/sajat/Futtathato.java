@@ -52,7 +52,7 @@ try {
 			int index = (int) ( Math.floor( (Math.random()*5+1) ) );
 			boolean siker = false;
 			
-			System.out.print( (index+1) + ": Irja be a felvenni kivant osszeget: ");
+			System.out.print( (index+1) + ": Irja be a felvenni kivant osszeget: ")
 			
 			do {
 			
@@ -112,5 +112,4 @@ try {
 		
 	return zeroHitelkeret_Counter;
 		}
-		
 	}

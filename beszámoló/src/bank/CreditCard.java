@@ -26,7 +26,7 @@ public class CreditCard extends Card {
 		}
 		return false;
 	}
-
+	
 	@Override
 	public String toString() {
 		return "CreditCard [hitelkeret=" + hitelkeret + ", getEgyenleg()=" + getEgyenleg() + ", getTulaj_neve()="
