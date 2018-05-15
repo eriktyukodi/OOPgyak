@@ -20,7 +20,7 @@ public abstract class Adathordozo {
 		return marka;
 	}
 	
-	abstract double szabadHely();
+	abstract double getszabadHely();
 	
 	
 	

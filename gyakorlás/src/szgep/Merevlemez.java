@@ -3,9 +3,10 @@ package szgep;
 public class Merevlemez extends Adathordozo {
 
 	@Override
-	double szabadHely() {
+	
+	public double getszabadHely() {
 		double szabadHely = getKapacitas() - foglalt_terulet;
-		return 0;
+		return szabadHely;
 	}
 	
 	private double foglalt_terulet;
@@ -21,12 +22,12 @@ public class Merevlemez extends Adathordozo {
 
 	@Override
 	public String toString() {
-		return "Merevlemez [szabadHely()=" + szabadHely() + ", getFoglalt_terulet()=" + getFoglalt_terulet()
+		return "Merevlemez [szabadHely()=" + getszabadHely() + ", getFoglalt_terulet()=" + getFoglalt_terulet()
 				+ ", getKapacitas()=" + getKapacitas() + ", getMarka()=" + getMarka() + "]";
 	}
 	
 	public boolean tobbHely (Merevlemez masikMerevlemez) {
-		return szabadHely() > masikMerevlemez.szabadHely();
+		return getszabadHely() > masikMerevlemez.getszabadHely();
 	}
 	//osztályszintû metódus
 	public static Adathordozo MelyikANagyobb (Adathordozo Merevlemez1, Adathordozo Merevlemez2) {
